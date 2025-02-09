@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Quicksand", serif;
+
+  --clr-dark: #062863;
+  --clr-light: #fff;
+  --clr-accent: #c4dcf3;
+}
+
+body {
+  background-color: var(--clr-light);
+  font-family: var(--ff-primary);
+}
+
+header {
+  background-color: var(--clr-dark);
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  border: 2px solid var(--clr-light);
+}
+
+main {
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+table,
+th,
+td {
+  font-family: var(--ff-primary);
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+/* Pseudo Selectors */
+tbody tr {
+  border: 1px solid var(--clr-accent);
+}
+
+th {
+  font-weight: bold;
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+}
+
+table {
+  margin: 120px auto;
+  border: 2px solid var(--clr-accent);
+}
+
+table th:first-child {
+  border: 1px solid var(--clr-light);
+}
+
+table td:first-child,
+table th:first-child {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+table td:nth-child(2),
+table td:nth-child(3),
+table td:nth-child(4),
+table td:nth-child(5) {
+  border: 1px solid var(--clr-dark);
+}
+
+footer {
+  text-align: center;
+}

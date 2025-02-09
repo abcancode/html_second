@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinyuka SOE HTML Second Assignment | Media</title>
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav>
+        <ul class="dropdown-content" id="dropdownContent">
+          <li><a href="table.html">Table</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <div class="intro_about-me">
+          <h1>I am Chidozie Abraham Ugwu</h1>
+          <img src="./image/chidozie-ugwu.jpeg" alt="Image of Chidozie Ugwu" />
+        </div>
+        <p>
+          Born and raised in Osun State, I am the first child in a family of
+          five, a unique position that has shaped my sense of responsibility and
+          leadership. My heritage is a rich blend of cultures, as I am the son
+          of an Igbo father and a Yoruba mother. Growing up in this culturally
+          diverse environment taught me the importance of unity, adaptability,
+          and embracing different perspectives. I take pride in my ability to
+          communicate fluently in English, Yoruba, and Igbo, a skill that allows
+          me to connect with people from various backgrounds seamlessly.
+        </p>
+        <p>
+          A fervent Chelsea FC supporter, I find joy and inspiration in the
+          beautiful game of football, which teaches resilience, strategy, and
+          the value of collaboration. My passion for sports complements my
+          technical pursuits, creating a balanced lifestyle that keeps me
+          motivated and focused on my goals. With a deep appreciation for my
+          roots and an unwavering drive to excel, I aim to contribute
+          meaningfully to my community and beyond through technology and
+          innovation.
+        </p>
+      </section>
+      <section id="bio-me">
+        <div class="intro_about-me">
+          <h2>I am an AltSchool Cloud Engineering Student</h2>
+          <img src="./image/me.jpeg" />
+          <img src="./image/me..jpeg" />
+          <img src="" />
+        </div>
+        <p>
+          In pursuit of my passion for technology, I studied Computer Science at
+          the University of Nigeria, where I graduated in 2018. During my time
+          at the university, I developed a deep love for working with computers
+          and exploring how they can solve real-world problems. My academic
+          journey equipped me with the technical skills and problem-solving
+          mindset needed to thrive in the tech industry. Beyond academics, my
+          love for sports, particularly basketball, has played a significant
+          role in shaping my discipline and teamwork skills, which I apply in
+          both my personal and professional life.
+        </p>
+      </section>
+      <section id="soe-goals">
+        <div class="media">
+          <p>My voice in real time.</p>
+          <audio controls>
+            <source src="./sounds/audio.aac" />
+          </audio>
+        </div>
+        <div class="media">
+          <p>My face and voice in real time</p>
+          <video width="100%" height="auto" controls>
+            <source src="../html_two/video.mp4" />
+          </video>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; 2025 | 1 Van Daniel's Street, Lekki, Lagos | All rights reserved.
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        let dropdownContent = document.getElementById("dropdownContent");
+        dropdownContent.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
